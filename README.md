@@ -1,0 +1,3 @@
+# angular-pager
+angular分页插件
+... 分页插件 ...
