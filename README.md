@@ -1,12 +1,14 @@
 ﻿# angular-pager
 angular分页插件
 
-html:
+> ## html
 <div ng-controller="PageCtrl">
-                    {{ text }}
-                    <observe totalitems="204" listsizes="5" itemsperpage="10"></observe>
-                </div>
-js: 
+    {{ text }}
+    <observe totalitems="204" listsizes="5" itemsperpage="10"></observe>
+</div>
+
+> ## js 
+=====================
 ctrl.controller('PageCtrl', ['$scope', function($scope){
     $scope.showPage = function(val, args){
         $scope.text = args;
@@ -14,6 +16,7 @@ ctrl.controller('PageCtrl', ['$scope', function($scope){
     }
     $scope.$on('pagechage', $scope.showPage);
 }]);
+=====================
 ctrl.directive('observe', function(){
     return {
         restrice: 'EA',
@@ -128,3 +131,4 @@ ctrl.directive('observe', function(){
         }
     }
 );
+=========================
