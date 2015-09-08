@@ -1,0 +1,16 @@
+<style>
+    .active{
+        background:#f90;
+    }
+    span[disabled]{
+        color:#999;
+    }
+</style>
+<div >
+    <span ng-click="first()" ng-disabled="isFirst()">{{ getText('first') }}</span>
+    <span ng-click="provie()" ng-disabled="isFirst()">{{ getText('provie') }}</span>
+    <span ng-repeat="i in page" ng-click="selectPage(i.indexPage)" ng-class="{active: i.active}">{{ i.text + 1 }}</span>
+    <span ng-click="next()" ng-disabled="isLast()">{{ getText('next') }}</span>
+    <span ng-click="last()" ng-disabled="isLast()">{{ getText('last') }}</span>
+    <span>共{{ totalPages }}页，{{ totalItems }}条</span>
+</div>

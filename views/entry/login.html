@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>登录</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../../stylesheets/entry/login.css?v218"/>
+
+    <script type="application/javascript" src="../../dist/libs/template.min.js"></script>
+    <script data-main="../../dist/app/heppynewyear-app.js?v2.1034f3" src="../../dist/require.min.js"></script>
+    <script>
+        window.onload = function () {
+            document.addEventListener('touchstart', function () {
+            }, false);
+        }
+    </script>
+</head>
+<body>
+
+<div class="header-logo">
+    <a class="register-btn" href="./register.html">注册</a>
+
+    <h1><img src="../../images/entry/logo.png" alt=""></h1>
+    <strong>体彩自助彩票</strong>
+
+    <p>（代理商版）</p>
+</div>
+<article>
+    <section class="login-cont">
+        <div class="login-user">
+            <div class="modle-input">
+                <input type="number" placeheader="输入手机号"><b class="drop-down-btn"></b>
+            </div>
+            <ul class="datalist">
+                <li>13231430669</li>
+                <li>13231430890</li>
+                <li>13231430890</li>
+                <li>13231430890</li>
+                <li>13231430890</li>
+                <li>13231430890</li>
+                <li>13231430890</li>
+                <li>13231430890</li>
+                <li>13231430890</li>
+            </ul>
+        </div>
+        <div class="login-psd">
+
+            <div class="modle-input">
+                <input type="password" placeheader="请输入密码"><b class="show-psd"></b>
+            </div>
+        </div>
+        <div class="login-sub">
+            <input type="submit" class="btn" value="登录">
+        </div>
+    </section>
+</article>
+</div>
+<script>
+    document.querySelector('.show-psd').onclick = function(){
+        var oInput = this.previousSibling;
+        oInput.getAttribute('type') === 'password' ? oInput.setAttribute('type', 'text') : oInput.setAttribute('type', 'password');
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>我的账户</title>
+    <meta http-equiv="pragma" content="no-cache"  />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT"/>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--<link rel="stylesheet" href="../../stylesheets/mynumber/mynumber-index.css?v218" />-->
+    <!--<script type="text/javascript" src="../../js/libs/iscroll-lite.js" ></script>-->
+    <script type="text/javascript" src="../../js/libs/zepto.min.js" ></script>
+
+    <!--<script>-->
+        <!--window.onload = function(){-->
+            <!--document.addEventListener('touchstart', function(){}, false);-->
+            <!--document.addEventListener('touchmove', function(e){e.preventDefault();}, false);-->
+            <!--new IScroll('#wrapper');-->
+        <!--}-->
+    <!--</script>-->
+    <style>
+
+    </style>
+</head>
+<body>
+<!--<article>-->
+    <!--<header class="user-header" id="content">-->
+        <!--<div class="back"><a href="javascript:history.forward();"></a></div>-->
+        <!--<span class="title" id="back"><a class="go2 to1" href="javascript:;">我的账号</a></span>-->
+    <!--</header>-->
+    <!--<section id="wrapper">-->
+
+        <!--<div class="scroll-box">-->
+            <!--<div class="mynumber-index">-->
+                <!--<div class="user-cont">-->
+                    <!--<section class="user-cont-msg">-->
+                        <!--<img src="http://pica.nipic.com/2007-12-23/200712231523651_2.jpg" class="user-img">-->
+                        <!--<img src="http://www.thyoo.com/upload/base_picture/origin/20110716054252_22269.jpg" class="user-img">-->
+
+                        <!--<img src="http://pic4.nipic.com/20090720/3042413_145401065_2.jpg" class="user-img">-->
+                        <!--<img src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">-->
+                        <!--<img src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">-->
+                        <!--<img src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">-->
+                        <!--<img src="http://pic1a.nipic.com/2009-02-20/2009220152758211_2.jpg" class="user-img">-->
+                        <!--<em class="user-name">13131430669</em>-->
+                        <!--<span class="user-mynumber">渠道编号</span>-->
+                    <!--</section>-->
+                    <!--<section class="user-money">-->
+                        <!--<ul class="have-line-list">-->
+                            <!--<li>-->
+                                <!--<span>预存款</span>-->
+                                <!--<em class="list-price">1234元</em>-->
+                            <!--</li>-->
+                            <!--<li class="show-line"></li>-->
+                            <!--<li>-->
+                                <!--<span>佣金</span>-->
+                                <!--<em class="list-price">1234元</em>-->
+                            <!--</li>-->
+                            <!--<li class="show-line"></li>-->
+                            <!--<li>-->
+                                <!--<span>红包</span>-->
+                                <!--<em class="list-price">1234元</em>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</section>-->
+                <!--</div>-->
+                <!--<div class="controll-panel">-->
+                    <!--<ul class="have-line-list">-->
+                        <!--<li>-->
+                            <!--<a href="./prestore-recharge.html">-->
+                                <!--<i class="panel-icon-recharge"></i>-->
+                                <!--<span class="panel-tit">充值</span>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li class="show-line"></li>-->
+                        <!--<li class="draw-money">-->
+                            <!--<a href="javascript:;">-->
+                                <!--<i class="panel-icon-draw"></i>-->
+                                <!--<span class="panel-tit">提款</span>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li class="show-line"></li>-->
+                        <!--<li>-->
+                            <!--<a href="">-->
+                                <!--<i class="panel-icon-advance"></i>-->
+                                <!--<span class="panel-tit">转预存款</span>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="user-detail-msg">-->
+                    <!--<div class="model-label-input">-->
+                        <!--<label>真实姓名：</label>-->
+                        <!--<div class="input-box">-->
+                            <!--<input type="text" value="未绑定" disabled="true" ><b class="go-prefect-btn">完善</b>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="model-label-input">-->
+                        <!--<label>身份证号：</label>-->
+                        <!--<div class="input-box">-->
+                            <!--<input type="text" value="1345606948484" disabled="true">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="model-label-input">-->
+                        <!--<label>手机号码：</label>-->
+                        <!--<div class="input-box">-->
+                            <!--<input type="text" value="132345666" disabled="true" style="border:none">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="change-tips">-->
+                    <!--<p>如需修改个人信息请联系客服：<a href="tel:400-666-780">400-666-780</a></p>-->
+                <!--</div>-->
+                <!--<div class="user-btn">-->
+                    <!--<a href="./changepsd.html" class="model-btn" btn-style="blue">修改密码</a>-->
+                    <!--<a href="" class="model-btn" btn-style="red">退出登录</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+<!--</article>-->
+<!--<section class="mask" style="display:none">-->
+    <!--<div class="layout">-->
+        <!--<h2 class="layout-header">佣金转预存款</h2>-->
+        <!--<div class="layout-body">-->
+            <!--<input type="mynumber" value="100">-->
+        <!--</div>-->
+        <!--<div class="layout-footer" id="div">-->
+            <!--<a href="" class="cancel">取消</a>-->
+            <!--<a href="" class="confirm">确定</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+<style>img{width:50px}</style>
+
+<a href=""><img src="http://attach.bbs.miui.com/forum/201012/17/0351303afw9qan4pfgagy9.jpg" class="user-img"></a>
+<img _src="http://img5.duitang.com/uploads/item/201405/14/20140514122636_rt4jG.thumb.600_0.jpeg" class="user-img">
+<img _src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">
+
+<img _src="http://img5.duitang.com/uploads/item/201405/14/20140514122636_rt4jG.thumb.600_0.jpeg" class="user-img">
+<img _src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">
+<img _src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">
+<img _src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">
+<img _src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">
+<img _src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">
+<img _src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">
+<img _src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">
+<img _src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">
+<img _src="http://image6.tuku.cn/wallpaper/Landscape%20Wallpapers/2488_2560x1600.jpg" class="user-img">
+<style>
+
+</style>
+<div id="view" class="hide" style=" height:30px">
+    <div>line1</div>
+    <div>line2</div><br/>
+    <div class="line3" >line3</div>
+    <input type="text" name="f" value="1">
+</div>
+<script type="text/javascript">
+    console.log(document.cookie)
+//    $('input').after('<span>fdf</span><span>fdf</span>')
+    var singleTagRE = /^<(\w+)\s*\/?\>(?:<\/\1>|)$/;
+    var tagExpanderRE = /<(?!input|area|br|col|hr|img|link|param|meta)(([\w:]+)[^>]*)\/>/ig;
+
+
+    function fragment(html, name, properies){
+        var dom;
+        singleTagRE.test(html) && (dom = document.createElement(RegExp.$1));
+
+        if (!dom) {
+            if (html.replace) html = html.replace(tagExpanderRE, '<$1></$2>');
+            alert(html)
+            var div = document.createElement('div');
+            div.innerHTML = '' + html;
+            dom = div.childNodes;
+            div.remove();
+        }
+        return dom;
+    }
+
+    var arr = ['after', 'prepend', 'before', 'append'];
+    var obj = {}
+    arr.forEach(function(operator, idx){
+        var inside = idx%2;
+        obj[operator] = function(obj, html){
+            var nodes = [];
+                nodes.push(html);
+            var nodes = map(nodes, function(node){
+
+                return typeof(node) == 'object' || typeof(node) == 'null' ?
+                        node : fragment(node);
+            });
+
+
+            [].slice.call(obj).forEach(function(obj){
+
+                var parent = inside ? obj : obj.parentNode;
+                var target = idx == 0 ? obj.nextSibling:
+                        idx == 1 ? obj.firstChild :
+                        idx == 2 ? obj:
+                        null;
+
+                [].slice.call(nodes[0]).forEach(function(node){
+                    node = node.cloneNode(true);
+                    parent.insertBefore(node, target);
+                    if (node.nodeName != null && node.nodeName.toLowerCase() === 'script' && (!node.type || node.type == 'text/javascript') && !node.src) {
+
+                        window['eval'].call(window, node.innerHTML);
+                    }
+                })
+            })
+        }
+    });
+
+function map(nodes, fn) {
+    var values = [], value;
+    for (var i = 0; i < nodes.length; i ++) {
+        value = fn.call(nodes[i], nodes[i], i);
+        if (value != null) values.push(value)
+    }
+    return values;
+}
+
+function isDocument(obj){
+    return obj !== null && obj.nodeType === 9
+}
+function qsa (element, selector){
+    var found,
+         re = /[w-]*$/,
+         maybeId = selector[0] == '#',
+         maybeClass = !maybeId && selector[0] == '.';
+         onlyName = (maybeId || maybeClass) ? selector.slice(1) : selector,
+         isSimple = re.test(onlyName);
+
+    return isDocument(element) && isSimple && maybeId ?
+            (found = element.getElementById(onlyName)) ? [found] : []:
+            (element.nodeType !== 1 && element.nodeType !== 9) ? [] :
+                    [].slice.call(isSimple && !maybeId ? maybeClass ? element.getElementsByClassName(onlyName) :
+                        element.getElementsByTagName(selector) :
+                        element.querySelectorAll(selector));
+}
+
+function matchs(node, selector){
+    var parent = node.parentNode;
+    var oDiv = document.createElement('div');
+    var temp = !parent;
+    if (temp)(parent = oDiv).appendChild(node);
+    var match = ~qsa(parent, selector).indexOf(node);
+    if (temp) parent.removeChild(node);
+    return match;
+}
+function filter(nodes, selector){
+
+    return [].filter.call(nodes, function(node){
+
+        return matchs(node, selector);
+    });
+}
+
+function filtered(nodes, selector){
+    return selector == null ? nodes : filter(nodes, selector)
+}
+var oDiv = document.querySelectorAll('div');
+function containe(parent, node){
+
+    while (node && (node = node.parentNode)) {
+        if (node == parent) return true;
+    }
+    return false;
+}
+function children(element){
+
+    return 'childen' in element ?
+             element.children:
+         map(element.childNodes, function(el){
+            if (el.nodeType === 1) return el
+        })
+}
+function map(ele, fn){
+    var value;
+var values = []
+for (var i = 0; i < ele.length; i++) {
+    value = fn.call(ele[i], ele[i], i);
+    if (value != null) values.push(value)
+}
+return values
+}
+
+
+</script>
+<script>
+//   <!---->
+//function ImgLoad(obj, mynumber, fn){
+//    this.obj = obj;
+//    this.mynumber = mynumber || 6;
+//    this.index =  0;
+//    this.fn = fn || function(){};
+//    if (!this.obj) return;
+//    this.init();
+//}
+//ImgLoad.prototype = {
+//    token: [],
+//    init: function(){
+//        var i = 0;
+//        for (this.token[i]; i < this.obj.length; i ++);
+//        console.log(this.token)
+//        this.loadImg();
+//    },
+//    loadImg: function(){
+//        if (this.token.length === 0 ) return;
+//
+//        this.mynumber = (this.token.length < this.mynumber) ? this.token.length : this.mynumber;
+//        for (var i = 0; i < this.mynumber; i ++) {
+//            load(this.token[i]);
+//        }
+//
+//        var This = this;
+//        function load (obj){
+//            var oImg = new Image(),
+//                    src = obj.getAttribute('_src')
+//
+//            if (oImg.complie) {
+//                This.loadOver(obj, src);
+//            }
+//            oImg.onload = function(){
+//                This.loadOver(obj, src);
+//
+//            }
+//            oImg.onerror = function(){
+//                This.loadOver(obj, src);
+//
+//            }
+//            oImg.src = src;
+//            oImg = null;
+//        }
+//    },
+//    loadOver: function(obj, src){
+//        obj.removeAttribute('_src');
+//        obj.src = src;
+//        this.index ++
+//
+//
+//
+//        if (this.index === this.mynumber) {
+//            this.token.splice(0, this.mynumber);
+//            this.fn();
+//            this.index = 0;
+//
+//            this.loadImg();
+//        }
+//    }
+//}
+
+/**
+ * 根据浏览器的最大并发数加载图片list
+ * @author luofei
+ * @date 2015-4-23
+ */
+
+;(function() {
+       /**
+        * 构造函数
+        * @param {Array} images 图片列表
+        * @param {Function} callback TODO 图片都加载完毕后的回调函数
+        * @return 无
+        */
+       function layzLoad (images, callback) {
+           this.images = images;
+           this.callback = callback || function () {};
+           this.isAllLoaded = false;
+
+           this.init();
+       }
+
+       /**
+        * 原型
+        */
+       layzLoad.prototype = {
+           constructor: layzLoad,
+
+           // 一次性并发请求的连接数
+           max_connections: 6,
+
+           // 辅助变量，用于管理图片的加载
+           tmp_arr: [],
+
+           // 已经加载的图片数量，可以理解为当前正在加载的图片的位置
+           loadedIndex: 0,
+
+           /**
+            * 入口函数
+            */
+           init: function () {
+               for (var i = 0, len = this.images.length; i < len; i++) {
+                   this.tmp_arr.push({
+                       id: i,
+                       src: this.images[i],
+                       loaded: false
+                   });
+               }
+
+               this.load();
+           },
+
+           /**
+            * load图片的入口函数
+            */
+           load: function () {
+               console.time('layzLoad');
+
+               for (var i = 0; i < this.max_connections; i++) {
+                   this.__load(this.tmp_arr[i]);
+               }
+           },
+
+           /**
+            * 加载单张图片
+            * @param {Object} img 图片信息
+            */
+           __load: function (img) {
+               var image = new Image();
+               var self = this;
+
+               this.loadedIndex++;
+
+               image.onload = function () {
+                   var next = self.__getNextUnLoadImg();
+
+                   img.loaded = true;
+                   image = null;
+                   // 加载下一张图片
+                   next && self.__load(next);
+
+                   // 判断是否都已经加载完毕
+                   if (self.__isAllImagesLoaded()) {
+                       self.isAllLoaded = true;
+                       self.callback();
+
+                       console.timeEnd('layzLoad');
+                   }
+               }
+               image.onerror = function () {
+                   img.loaded = true;
+                   image = null;
+               }
+
+               image.src = img.src;
+           },
+
+           /**
+            * 取到下一张需要加载的图片
+            * @return {Boolean | Object}
+            */
+           __getNextUnLoadImg: function () {
+               return this.loadedIndex >= this.tmp_arr.length ? false : this.tmp_arr[this.loadedIndex];
+           },
+
+           /**
+            * 是否所有的图片都加载完了
+            */
+           __isAllImagesLoaded: function () {
+               for (var i = 0, len = this.tmp_arr.length; i < len; i++) {
+                   if (!this.tmp_arr[i].loaded) return false;
+               }
+
+               return true;
+           }
+       }
+
+       // 注册入口
+       window.layzLoad = layzLoad;
+   })();
+   var arr = [];
+var oImg = document.querySelectorAll('img');
+   for ( var i = 0; i < oImg.length; i ++) {
+       arr.push(oImg[i].getAttribute('_src'));
+   }
+   // 用法
+
+ new layzLoad(arr);
+
+
+</script>
+
+</body>
+</html>   

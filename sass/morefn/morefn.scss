@@ -1,0 +1,18 @@
+@import '../base';
+.is-update{
+  width: .12rem;
+  height: .12rem;
+  background:#f00;
+  border-radius: .12rem;
+  position:absolute;
+  margin: .08rem 0;
+}
+.more-tip{
+  position:absolute;
+  margin: -.16rem 0 0;
+  -webkit-transform:translateX(-100%);
+  transform:translateX(-100%);
+  font-size: .12rem;
+  color:#666;
+  white-space:nowrap;
+}

@@ -1,0 +1,132 @@
+<header class="index-header">
+    <span class="title">你好，{{ test }}</span>
+    <div class="other-fn"><a href="#">退出登录</a></div>
+
+</header>
+<section id="wrapper">
+    <div class="iscroll">
+        <div class="statistics">
+            <section class="collect">
+                <p>投注总金额：12345</p>
+                <p>昨日新增：123</p>
+                <div ng-controller="PageCtrl">
+                    {{ text }}
+                    <observe totalitems="204" listsizes="5" itemsperpage="10"></observe>
+                </div>
+                <div ng-controller="TestdialogCtrl">
+                    <span ng-bind="result"></span>
+                    <button ng-click="dialog()">confirm</button>
+                    <div ng-controller="alertCtrl">
+                        <input type="text"   name="inputTest"  ng-model="opactions"  required>
+
+                        <button type="submit" ng-click="hint()">sub</button>
+
+                    </div>
+                </div>
+                <div ng-controller="TestListCtrl">
+                    <li ng-repeat="student in students" context-menu="itemMenu(student)" >
+                        <span>{{ student.name }}</span>
+                        <span>{{ student.age }}</span>
+                        <span>{{ student.gender }}</span>
+                    </li>
+                </div>
+            </section>
+            <section class="collect-progress">
+                <div class="collect-progress-canvas">
+                    <div class="progress-status">
+                        <span class="pro-tit">注册：</span>
+
+                        <div class="progress">
+                            <span class="progress-old"></span>
+                            <span class="progress-news"></span>
+
+                            <div class="progress-users">
+                                <span class="p-100"><em>100</em></span>
+                                <span class="p-1000"><em>1000</em></span>
+                                <span class="p-10000"><em>10000</em></span>
+                                <span class="p-100000"><em>100000</em></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="show-count">总计2人，新增2人</p>
+                </div>
+                <div class="collect-progress-canvas">
+                    <div class="progress-status">
+                        <span class="pro-tit">充值：</span>
+
+                        <div class="progress">
+                            <span class="progress-old"></span>
+                            <span class="progress-news"></span>
+
+                            <div class="progress-users">
+                                <span class="p-100"><em>100</em></span>
+                                <span class="p-1000"><em>1000</em></span>
+                                <span class="p-10000"><em>10000</em></span>
+                                <span class="p-100000"><em>100000</em></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="show-count">总计2人，新增2人</p>
+                </div>
+            </section>
+            <section class="money-status">
+                <div class="deposit">
+                    <div class="m-img-txt">
+                        <div class="cont-pos">
+                            <span class="price">1234</span>
+
+                            <div class="color-box"></div>
+                            <p class="price-name">预存款</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="commission">
+                    <div class="m-img-txt">
+                        <div class="cont-pos">
+                            <span class="price">1234</span>
+
+                            <div class="color-box"></div>
+                            <p class="price-name">佣金</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="gift">
+                    <div class="m-img-txt">
+                        <div class="cont-pos">
+                            <span class="price">1234</span>
+
+                            <div class="color-box"></div>
+                            <p class="price-name">红包</p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="channel-cont">
+            <ul class="channel-cont-icon">
+                <li class="my-users">
+                    <div class="icon-box"><a href="/views/#/myusers"><i></i><span>我的用户</span></a></div>
+                </li>
+                <li class="agent">
+                    <div class="icon-box"><a href="agent-recharge/agent-recharge.html"><i></i><span>代充彩金</span></a>
+                    </div>
+                </li>
+                <li class="code-2d">
+                    <div class="icon-box"><a href=""><i></i><span>二维码</span></a></div>
+                </li>
+                <li class="my-account">
+                    <div class="icon-box"><a href="number/number-index.html"><i></i><span>我的账户</span></a></div>
+                </li>
+                <li class="commission-detail">
+                    <div class="icon-box"><a href=""><i></i><span>佣金明细</span></a></div>
+                </li>
+                <li class="more-fn">
+                    <div class="icon-box"><a href="more-fn/fn-index.html"><i></i><span>更多功能</span></a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

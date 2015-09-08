@@ -1,0 +1,515 @@
+@import 'base';
+
+.usersmanage{
+
+}
+.tab-menu{
+  display:-webkit-box;
+  display:box;
+  width:100%;
+  li{
+    line-height: .41rem;
+    -webkit-box-flex:1;
+    box-flex:1;
+    border-bottom:1px solid $c2f8;
+    font-size: .18rem;
+    color:#333;
+    text-align:center;
+    &.active{
+      border-width:3px;
+      color:$c2f8;
+    }
+  }
+}
+/* 用户查询 begin */
+.box-border-cont{
+  height: .45rem;
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  margin: .2rem 0;
+  font-size: .16rem;
+  color:#333;
+  transition:all .7s ease;
+  -webkit-transition:all .7s ease;
+  overflow:hidden;
+}
+.b-b-tit{
+  display:-webkit-box;
+  display:box;
+  padding:0 .18rem;
+  line-height: .45rem;
+  -webkit-box-align:center;
+  box-align:center;
+  & > *{
+    display:block;
+    background-size: 100%;
+  }
+  .text{
+    padding-left: .06rem;
+    -webkit-box-flex:1;
+    box-flex:1;
+  }
+  .icon-all{
+    width: .21rem;
+    height: .25rem;
+    background-image:url(../../images/users/icon_alluser.png);
+  }
+  .icon-one{
+    @extend .icon-all;
+    background-image:url(../../images/users/icon_search_one.png);
+  }
+  .icon-empty{
+    @extend .icon-all;
+    background-image:url(../../images/users/icon_search_recharge.png);
+  }
+  .show-btn{
+    display:inline-block;
+    width: .075rem;
+    height: .075rem;
+  }
+  .icon-more{
+    width:.13rem;
+    height: .19rem;
+    margin-right: .05rem;
+    background-image:url(../../images/users/icon_arrow.png);
+  }
+}
+.show-dorp{
+  width: 2.6rem;
+  margin:0 0 .13rem .18rem;
+
+}
+.model-search{
+  position:relative;
+  input:first-child{
+    width:100%;
+    height: .29rem;
+    padding-left: .32rem;
+    border:1px solid #ddd;
+    border-radius: .04rem;
+    line-height: .29rem;
+    font-size:inherit;
+    &::-webkit-input-placeholder{
+      color:#ccc;
+    }
+  }
+  .search-sub{
+    width: .29rem;
+    height: .29rem;
+    border:none;
+    background:url(../../images/users/icon_search.png) 0 .02rem;
+    background-size:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    font-size:0;
+  }
+}
+/* 用户列表 begin */
+.users-wrap{
+}
+.menu-list{
+  padding: .02rem 0;
+  border-top:1px solid #ddd;
+  background:#eee;
+  overflow:hidden;
+  li{
+    width:33.333%;
+    height:．4rem;
+    border-left:1px solid #ccc;
+    float:left;
+    text-align:center;
+    color:#333;
+    &:first-child{
+      border:none;
+    }
+    .sort-btns{
+      display:inline-block;
+      vertical-align:middle;
+      i{
+        display:block;
+        height:0;
+        width:0;
+        border: .075rem solid transparent;
+        margin: .02rem .05rem;
+        &.icon-up{
+          border-bottom-color:#ccc;
+          &.active{
+            border-bottom-color:$c2f8;
+          }
+        }
+        &.icon-down{
+          border-top-color:#ccc;
+          &.active{
+            border-top-color:$c2f8;
+          }
+        }
+      }
+    }
+  }
+}
+.users-list{
+
+  li{
+    height: .6rem;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    margin-bottom: .15rem;
+    position:relative;
+    a {
+      display: block;
+      height:inherit;
+      background:#f90;
+      &:active{
+        background: #f8f8f8;
+      }
+      & > div {
+        width:33.33333%;
+        padding-top: .08rem;
+        float:left;
+        font-size: .14rem;
+        text-align:center;
+      }
+    }
+    .icon-more{
+      width: .13rem;
+      height: .19rem;
+      background-image:url(../../images/users/icon_arrow.png);
+      background-size:100%;
+      position:absolute;
+      right: .05rem;
+      top: .22rem;
+    }
+    .price{
+      margin-top: -.01rem;
+      .user-name{
+        padding-left: .16rem;
+        color:$c2f8;
+        font-size: .12rem;
+        position:relative;
+        [class*="icon"] {
+          width: .16rem;
+          height: .16rem;
+          margin: 0rem 0 0 -.16rem;
+          background-size:100%;
+          position:absolute;
+        }
+        .icon-user{
+          background-image:url(../../images/users/user_user.png);
+        }
+      }
+      .user-price{
+        @extend .user-name;
+        top: .01rem;
+        color:#333;
+        font-size: .14rem;
+        .icon-price{
+          margin-right: .04rem;
+          background-image:url(../../images/users/user_cash.png);
+        }
+      }
+    }
+    .time{
+      time{
+        display:block;
+        color:#666;
+      }
+    }
+  }
+}
+
+/* 用户列表 end */
+/* 用户详情 begin */
+.user-des-wrap{
+
+}
+
+.user-bg{
+  margin-top: -.2rem;
+  background:#eee;
+  .icon-user{
+    display:inline-block;
+    width: .16rem;
+    height: .17rem;
+    margin-right: .08rem;
+    background:url(../../images/users/icon_user_detail.png);
+    background-size:100%;
+  }
+}
+.user-remarks{
+  border-bottom:1px solid #ddd;
+}
+.u-r-box{
+  padding: .075rem 0 0 .1rem;
+
+  .model-switch-btn{
+    position:absolute;
+    right: .1rem;
+    top: .115rem;
+  }
+  .model-label-input:last-child .input-box input{
+    border:none;
+  }
+}
+/* 用户充值注册时间 */
+.user-msg{
+  padding-bttom: .3rem;
+  dd{
+    padding-left: .1rem;
+    border-top:1px solid #ddd;
+  }
+  .u-m-tit{
+    padding: .15rem .1rem 0;
+    line-height: .25rem;
+    font-size: .12rem;
+    color:#999;
+  }
+  .u-m-tip{
+    line-height: .45rem;
+    overflow:hidden;
+    .model-radius-btn{
+      margin-top: .1rem;
+      float:right;
+    }
+  }
+  .u-m-body{
+  }
+}
+.model-lable-msg{
+  display:-webkit-box;
+  display:box;
+  height: .55rem;
+  padding:0 .1rem;
+  font-size: .16rem;
+  color:#333;
+  -webkit-box-align:center;
+  box-align:center;
+  &:first-child .m-l-m-body{
+    border:none;
+  }
+  .m-l-m-tit{
+    width: .48rem;
+    font-size: inherit;
+  }
+  .m-l-m-body{
+    -webkit-box-flex:1;
+    box-flex:1;
+    padding-left: .1rem;
+    border-top:1px solid #ddd;
+    color:#666;
+  }
+}
+
+/* 用户详情 end */
+/* 短信管理 begin */
+.msg-cont{
+  .show-dorp{
+    position:absolute;
+    width:100%;
+    margin:0;
+    background:#fff;
+    z-index:2;
+    display:none;
+  }
+  .m-c-header{
+    margin:.1rem auto -.08rem;
+    text-align:center;
+  }
+
+}
+.msg-tips{
+  display:inline-block;
+  padding:0 .14rem;
+  line-height: .22rem;
+  text-align:center;
+  font-size: .14rem;
+  color:#999;
+  background:#e2e2e2;
+  border-radius: .1rem;
+}
+.icon-all-users{
+  width: .3rem;
+  height: .3rem;
+  background-image:url(../../images/users/icon_all.png);
+}
+.icon-friends{
+  @extend .icon-all-users;
+  background-image:url(../../images/users/icon_friend.png);
+}
+
+.bor-list li{
+  display:-webkit-box;
+  display:box;
+  padding-left: .3rem;
+  border-bottom:1px solid #ddd;
+  line-height: .35rem;
+  font-size:inherit;
+  em{
+    display:block;
+    -webkit-box-flex:1;
+    box-flex:1;
+  }
+  .checkbox{
+    margin-right: .13rem;
+  }
+}
+
+/* 输入短信内容 begin */
+.msg-input-box{
+  width:100%;
+  height: .98rem;
+  padding:0 .1rem;
+  position:relative;
+  textarea{
+    width:100%;
+    height:100%;
+    padding: .04rem;
+    border:2px solid #ccc;
+    border-radius: .04rem;
+    font-size:inherit;
+    resize:none;
+    outline:none;
+  }
+  .msg-size{
+    position:absolute;
+    right: .16rem;
+    bottom: .02rem;
+    font-size: .14rem;
+    color:#999;
+  }
+}
+.m-i-remarks{
+  padding: .05rem 0 .1rem;
+  text-align:center;
+}
+.msg-subs{
+  padding:0 .1rem;
+  span{
+    float:left;
+    width:48%;
+    &:last-child{
+      float:right;
+    }
+  }
+}
+/* 群组管理 begin */
+.g-c-header{
+  height: .44rem;
+  padding:0 .1rem;
+  line-height: .44rem;
+  background:#f3f3f3;
+  font-size: .16rem;
+  .creat-grunp-btn{
+    float:right;
+    padding:0 .1rem;
+    margin-top: .08rem;
+    line-height: .27rem;
+    background:$c2f8;
+    border-radius: .12rem;
+    color:#fff;
+  }
+}
+.group-box{
+  display:-webkit-box;
+  display:box;
+  -webkit-box-align:center;
+  box-align:center;
+  height: .6rem;
+  padding:0 .12rem 0 .16rem;
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  margin: .2rem 0 0;
+  color:#333;
+  font-size: .16rem;
+  &:active{
+    background:#f8f8f8;
+  }
+}
+.g-b-tit{
+  display:block;
+  -webkit-box-flex:1;
+  box-flex:1;
+}
+.icon-dorp-right{
+  display:block;
+  width: 0;
+  height: 0;
+  border: .08rem solid transparent;
+  border-left: .13rem solid #b6b6b6;
+  -webkit-transition:all .2s;
+  transition:all .2s;
+  &.change{
+    -webkit-transform-origin: 30% 50%;
+    transform-origin: 30% 50%;
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+  }
+}
+.group-controll-btns{
+  height: .4rem;
+  font-size: .08rem;
+  text-align:center;
+  span{
+    display:inline-block;
+    width: .54rem;
+    border-left:1px solid #ddd;
+    &:first-child{
+      border:none;
+    }
+    i{
+      display:block;
+      width: .3rem;
+      height: .3rem;
+      margin:0 auto;
+      background-size:100%;
+    }
+  }
+  .icon-add{
+    background-image:url(../../images/users/icon_group_add_g.png);
+  }
+  .icon-sendmsg{
+    background-image:url(../../images/users/icon_group_mess.png);
+  }
+  .icon-delgroup{
+    background-image:url(../../images/users/icon_group_dele_g.png);
+  }
+  .icon-callphone{
+    background-image:url(../../images/users/icon_user_call.png);
+  }
+  .icon-sendmsg{
+    background-image:url(../../images/users/icon_user_mess.png);
+  }
+}
+
+.group-cont .bor-list{
+  display:none;
+  .b-l-body {
+    width: 100%;
+    display: inherit;
+    -webkit-transform: translateX(.4rem);
+    transform: translateX(.4rem);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    .del-btn {
+      display: block;
+      width: .4rem;
+      text-align: center;
+      background: #f00;
+      color: #fff;
+      font-size: .12rem;
+    }
+  }
+}
+/* 新建群组 begin */
+.creategroup .layout-body{
+  height: 2rem;
+  padding:0;
+  /* 重写 bor-list */
+  .bor-list li{
+    padding:0 .04rem 0 .12rem;
+    &:last-child{
+      border:none;
+    }
+  }
+}
+/* 新建群组 end */

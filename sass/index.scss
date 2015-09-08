@@ -1,0 +1,224 @@
+@import 'base';
+.statistics{
+  background:#3e4d68;
+}
+.collect{
+  padding: .2rem 0 .14rem;
+  line-height: .32rem;
+  font-size: .19rem;
+  text-align:center;
+  color:#fff;
+}
+.collect-progress{
+  padding:.17rem .1rem;
+  border-top:1px solid #53617c;
+  border-bottom:1px solid #53617c;
+  & > div:nth-of-type(2){
+    margin-top: .24rem;
+  }
+}
+.collect-progress-canvas{
+  color:$c2f8;
+}
+.progress-status{
+  display:-webkit-box;
+  display:box;
+  -webkit-box-align:center;
+  box-align:center;
+  .pro-tit{
+    width: .52rem;
+    font-size: .17rem;
+  }
+  .progress{
+    -webkit-box-flex:1;
+    box-flex:1;
+    height: .14rem;
+    border:1px solid #5b7ebb;
+    border-radius: .12rem;
+    position:relative;
+  }
+  .progress-old{
+    width: 10%;
+    height: .13rem;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:2;
+    background:#df7c35;
+    border-radius: .12rem;
+  }
+  .progress-news{
+    @extend .progress-old;
+    width: 13%;
+    background:#f5ad79;
+    z-index:1;
+  }
+}
+.progress-users{
+  width:100%;
+  height: .04rem;
+  position:absolute;
+
+  left:0;
+  top: -.04rem;
+  & > span{
+    width: 2px;
+    height: .04rem;
+    background:#5b7ebb;
+    position:absolute;
+    & > em {
+      position:absolute;
+      left:50%;
+      top: -.15rem;
+      font-size: .1rem;
+      color:#5b7ebb;
+      -webkit-transform:translateX(-50%);
+      transform:translateX(-50%);
+    }
+  }
+  .p-100{
+    left:10%;
+  }
+  .p-1000{
+    left:25%;
+  }
+  .p-10000{
+    left:55%;
+  }
+  .p-100000{
+    left:90%;
+  }
+}
+.show-count{
+  padding-left: .52rem;
+  color:#fff;
+  font-size: .13rem;
+}
+.money-status{
+  padding: .15rem .1rem .1rem;
+  overflow:hidden;
+  & > div{
+    width:30%;
+    float:left;
+    &:nth-child(1){
+      margin-left:0;
+    }
+    &:nth-child(2){
+      margin-left:5%;
+    }
+    &:nth-child(3){
+      margin-left:5%;
+    }
+  }
+}
+.m-img-txt{
+
+  width:100%;
+  background:#38455d;
+  border-top-left-radius: .04rem;
+  border-top-right-radius: .04rem;
+  position:relative;
+  height:0 !important;
+  padding-top:110%;
+
+}
+.cont-pos{
+  display:-webkit-box;
+  display:box;
+  -webkit-box-orient:vertical;
+  box-orient:middle;
+  -webkit-box-align:center;
+  box-align:center;
+  -webkit-box-pack: end;
+  box-pack: end;
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  .price{
+    font-size: .13rem;
+    color:#fff;
+  }
+  .color-box{
+    width:70%;
+    height:10%;
+    background:#7dcc93;
+  }
+  p{
+    font-size: .17rem;
+    line-height: .45rem;
+    color:$c2f8;
+  }
+}
+.commission .cont-pos .color-box{
+  background:#886de1;
+}
+.gift .cont-pos .color-box{
+  background:#e06d94;
+}
+.channel-cont{
+  background:#fff;
+}
+.channel-cont-icon{
+  overflow:hidden;
+  li{
+    width:33.333333%;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-top:-1px;
+    float:left;
+
+    &:nth-of-type(3n){
+      border-right:none;
+    }
+  }
+}
+.icon-box{
+  height:0 !important;
+  position:relative;
+  padding-bottom:100%;
+  & > a{
+    width:100%;
+    heigh:100%;
+    position:absolute;
+    text-align:center;
+    i{
+      display:inline-block;
+      width: .47rem;
+      height: .47rem;
+      margin-top: .19rem;
+    }
+    span{
+      display:block;
+      margin-top: .08rem;
+      line-height: .36rem;
+      font-size: .16rem;
+      color:#666;
+    }
+  }
+}
+.my-users i{
+  background:url(../../images/index/icon_users.png) no-repeat;
+  background-size:100%;
+}
+.agent i{
+  background:url(../../images/index/icon_recha.png) no-repeat;
+  background-size:100%;
+}
+.code-2d i{
+  background:url(../../images/index/icon_users.png) no-repeat;
+  background-size:100%;
+}
+.my-account i{
+  background:url(../../images/index/icon_account.png) no-repeat;
+  background-size:100%;
+}
+.commission-detail i{
+  background:url(../../images/index/icon_commission.png) no-repeat;
+  background-size:100%;
+}
+.more-fn i{
+  background:url(../../images/index/icon_more.png) no-repeat;
+  background-size:100%;
+}

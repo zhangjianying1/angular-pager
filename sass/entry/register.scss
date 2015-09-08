@@ -1,0 +1,41 @@
+@import '../base';
+
+
+.register-cont{
+  padding:0 .1rem;
+  font-size: .18rem;
+}
+.base-msg{
+  margin-top: .12rem;
+  .model-cont-box{
+    margin-top: .1rem;
+  }
+}
+.channel-msg{
+  margin-top: .2rem;
+  .model-cont-box{
+    margin-top: .1rem;
+  }
+}
+.register-sub{
+  margin-top: .22rem;
+}
+.service-tele{
+  width:100%;
+  line-height: .6rem;
+  font-size: .17rem;
+  text-align:center;
+  position:absolute;
+  bottom:0;
+  a{
+    color:$c2f8;
+  }
+}
+.agree{
+  margin-top: .08rem;
+  font-size: .13rem;
+  clor:#ccc;
+  a{
+    color: $c2f8;
+  }
+}

@@ -1,0 +1,118 @@
+@import '../base';
+@import 'recharge';
+
+.user-header{
+  background:-webkit-linear-gradient(top, #64a7e9, #549ce2);
+  background:linear-gradient(top, #64a7e9, #549ce2);
+}
+.user-cont{
+ background:-webkit-linear-gradient(top, #549ce2, #297dd1);
+ background:linear-gradient(top, #549ce2, #297dd1);
+}
+.user-cont-msg{
+  height: 1rem;
+  padding: .12rem .24rem;
+  color:#fff;
+  font-size: .17rem;
+  .user-img{
+    width: .75rem;
+    height: .75rem;
+    border-radius: .75rem;
+    float:left;
+  }
+  .user-name{
+    margin: .08rem 0 0 .97rem;
+    display:block;
+  }
+  .user-number{
+    @extend .user-name;
+    font-size: .15rem;
+  }
+}
+.user-money{
+  height: .59rem;
+  border-top:1px solid #4ea6e5;
+}
+.have-line-list {
+  display:-webkit-box;
+  display:box;
+  height:inherit;
+  -webkit-box-align:center;
+  box-align:center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  li{
+    display:-webkit-box;
+    display:box;
+    -webkit-box-orient:vertical;
+    box-orient:vertical;
+    -webkit-box-pack: center;
+    box-pack: center;
+    -webkit-box-align:center;
+    box-align:center;
+    width:33.3333%;
+    height:inherit;
+    color:#fff;
+    font-size: .14rem;
+    text-align:center;
+    &.show-line{
+      width:0;
+      height: .3rem;
+      border-left:1px solid #4ea6e5;
+    }
+    .list-price{
+      display:block;
+      line-height: 1.7;
+      font-size: .16rem;
+    }
+  }
+}
+.controll-panel{
+  height: .65rem;
+  border-bottom:1px solid $cddd;
+
+  .have-line-list .show-line{
+    height:inherit;
+    border-color:$cddd;
+  }
+  & [class*="panel-icon"] {
+    display:block;
+    width: .33rem;
+    height: .27rem;
+    background-size: .33rem;
+  }
+  & .panel-tit{
+    font-size: .15rem;
+    color:#333;
+  }
+  & .panel-icon-recharge{
+    background-image:url(../../images/number/icon_recharge.png);
+  }
+  & .panel-icon-draw{
+    background-image:url(../../images/number/icon_cash.png);
+  }
+  & .panel-icon-advance{
+    background-image:url(../../images/number/icon_change.png);
+  }
+}
+.user-detail-msg{
+  border-top:1px solid $cddd;
+  border-bottom:1px solid $cddd;
+  margin-top: .2rem;
+}
+
+.change-tips{
+  line-height: .37rem;
+  font-size: .12rem;
+  color:#999;
+  a{
+    color:$c2f8;
+  }
+}
+.user-btn{
+  padding: .04rem .2rem .3rem;
+  .model-btn{
+    margin-top: .1rem;
+  }
+}
+@import 'drawing';
